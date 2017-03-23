@@ -26,9 +26,9 @@
 #define XDBG_ALLOC_INCLUDE
 
 
-
+#ifndef __APPLE__
 #include <malloc.h>
-
+#endif
 
 
 #ifdef XDBG_ALLOC_C

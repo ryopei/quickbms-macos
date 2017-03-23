@@ -61,7 +61,9 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
+#ifndef __APPLE__
 #include <malloc.h>
+#endif
 #include <errno.h>
 
 #ifdef WIN32

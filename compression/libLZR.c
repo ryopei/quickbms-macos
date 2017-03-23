@@ -9,7 +9,9 @@
  *
  */
 
+#ifndef __APPLE__
 #include <malloc.h>
+#endif
 #include "libLZR.h"
 
 void LZRFillBuffer(unsigned int *test_mask, unsigned int *mask, unsigned int *buffer, unsigned char **next_in) {
