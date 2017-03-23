@@ -19,7 +19,7 @@ SRC		= $(EXE).c
 CC		= /usr/local/Cellar/gcc/6.3.0_1/bin/gcc-6
 CXX		= /usr/local/Cellar/gcc/6.3.0_1/bin/g++-6
 CDEFS	+= -DDISABLE_LZO -DDISABLE_SSL
-CFLAGS	+= -I/usr/include/malloc/ -Dunix -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib
+CFLAGS	+= -Dunix -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib -static-libstdc++
 
 
 all:
